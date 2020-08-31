@@ -1,12 +1,3 @@
-/*
-  
-
-              v-for="(item, index) in bingoItems"
-            :key="index"
-            
-
-*/
-
 <script>
 export default {};
 </script>

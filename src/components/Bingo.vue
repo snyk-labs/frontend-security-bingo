@@ -27,7 +27,7 @@
       </v-col>
 
       <v-row class="mb-10">
-        <v-col v-for="(item, index) in bingoItems" :key="index" cols="3" align="center">
+        <v-col v-for="(item, index) in bingoItems" :key="index" cols="12" md="3" align="center">
           <v-card
             :ripple="false"
             :title="item.title"
