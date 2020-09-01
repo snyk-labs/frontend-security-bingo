@@ -41,7 +41,7 @@
             height="100%"
           >
             <v-card-text>
-              <p class="display-1 text--primary">{{item.text}}</p>
+              <h1 class="text--primary font-weight-regular mb-2" style="line-height: 32px">{{item.text}}</h1>
               <p>{{item.category}}</p>
             </v-card-text>
 
@@ -49,7 +49,6 @@
             <v-card-actions>
               <v-row align="center" justify="center">
                 <v-btn
-                  class="ma-2"
                   color="purple"
                   @click="gotoWebsite({url: item.url})"
                   dark

@@ -1,10 +1,3 @@
-<script>
-export default {};
-</script>
-
-<style>
-</style>
-
 <template>
   <div>
     <v-container class="text-center pt-10 pb-10" :fluid="true">
@@ -17,19 +10,17 @@ export default {};
                 v-model="shareTwitterText"
                 label="tweet"
                 required
-                :error-messages="tweetErrors"
+                :error-messages="tweetError"
               ></v-text-field>
+              <v-btn
+                color="blue"
+                outlined
+                large
+                @click="shareTwitter"
+                class="blue--text text--darken-1 font-weight-bold"
+                full-width
+              >Share on Twitter</v-btn>
             </span>
-            <br />
-            <br />
-            <v-btn
-              color="blue"
-              outlined
-              large
-              @click="shareTwitter"
-              class="blue--text text--darken-1 font-weight-bold"
-              full-width
-            >Share on Twitter</v-btn>
           </v-sheet>
         </v-col>
       </v-row>
@@ -44,18 +35,16 @@ export default {
     return {
       shareTwitterText:
         "Learn about Frontend Security Bingo: https://goo.gl #FrontendSecurity #WebDev",
-      tweetErrors: []
+      tweetError: ''
     };
   },
   methods: {
     shareTwitter() {
       if (this.shareTwitterText.length > 280) {
-        this.tweetErrors.push(
-          `Your text is longer than 280 characters: ${this.shareTwitterText}`
-        );
+        this.tweetError = `Your text is longer than 280 characters: ${this.shareTwitterText}`;
         return true;
       } else {
-        this.tweetErrors = [];
+        this.tweetError = '';
         const tweetMsg = encodeURIComponent(this.shareTwitterText);
         const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetMsg}&via=liran_tal`;
         window.open(tweetUrl, "_blank");
