@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container>
+    <v-container fluid>
       <v-col md="6" offset-md="3">
         <v-row align="center" justify="center">
           <v-progress-linear
