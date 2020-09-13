@@ -8,7 +8,7 @@
               <v-text-field
                 :counter="true"
                 v-model="shareTwitterText"
-                label="tweet"
+                label="tweet message"
                 required
                 :error-messages="tweetError"
               ></v-text-field>
