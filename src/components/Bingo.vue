@@ -103,7 +103,56 @@ export default {
           category: "http security header",
           url:
             "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
-        }
+        },
+        {
+          directive: "",
+          text: "I set HTTP header Strict-Transport-Security",
+          category: "http security header",
+          url:
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
+        },
+        {
+          directive: "",
+          text: "I set HTTP header Strict-Transport-Security",
+          category: "http security header",
+          url:
+            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
+        },
+        {
+          directive: "",
+          text: "I learn about web security",
+          category: "security learning",
+          url:
+            "https://developer.mozilla.org/en-US/docs/Web/Security"
+        },
+        {
+          directive: "",
+          text: "I practice security education",
+          category: "security learning",
+          url:
+            "https://www.hacksplaining.com/lessons"
+        },
+        {
+          directive: "",
+          text: "I practice Capture The Flag security games",
+          category: "security learning",
+          url:
+            "https://ctf.hacker101.com/"
+        },
+        {
+          directive: "",
+          text: "I practice DevSecOps",
+          category: "tools",
+          url:
+            "https://snyk.io/devsecops/technology/"
+        },
+        {
+          directive: "",
+          text: "I understand Cross-site Scripting vulnerabilities in frontend apps",
+          category: "vulnerabilities",
+          url:
+            "https://snyk.io/learn/cross-site-scripting/"
+        },
       ]
     };
   },
