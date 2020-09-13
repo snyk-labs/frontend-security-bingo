@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container class="text-center pt-10 pb-10" :fluid="true">
-      <v-row align="center" justify="center" class="grey lighten-5" style="height: 300px;">
+      <v-row justify="center" class="grey lighten-5" style="height: 300px;">
         <v-col cols="6">
           <v-sheet elevation="12" class="pa-12">
             <span class="mr-2">

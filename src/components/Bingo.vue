@@ -2,7 +2,7 @@
   <div>
     <v-container fluid>
       <v-col md="6" offset-md="3">
-        <v-row align="center" justify="center">
+        <v-row justify="center">
           <v-progress-linear
             color="purple"
             height="12"
@@ -41,7 +41,7 @@
 
             <v-spacer></v-spacer>
             <v-card-actions>
-              <v-row align="center" justify="center">
+              <v-row justify="center">
                 <v-btn
                   color="purple"
                   @click="gotoWebsite({url: item.url})"
@@ -54,7 +54,7 @@
         </v-col>
       </v-row>
 
-       <v-row align="center mb-5" justify="center">
+       <v-row class="center mb-5" justify="center">
         <v-btn @click="shareWithYourFriends" class="ma-2" color="blue" dark>
           <v-icon dark>mdi-twitter</v-icon>
           share with your friends
