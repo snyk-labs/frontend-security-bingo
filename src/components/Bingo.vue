@@ -4,8 +4,8 @@
       <v-col md="6" offset-md="3">
         <v-row align="center" justify="center">
           <v-progress-linear
-            background-color="pink"
             color="purple"
+            height="12"
             v-bind:value="bingoItemsToggledPercent"
           ></v-progress-linear>
 
