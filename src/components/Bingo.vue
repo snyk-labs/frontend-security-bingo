@@ -4,15 +4,15 @@
       <v-col md="6" offset-md="3">
         <v-row align="center" justify="center">
           <v-progress-linear
-            background-color="error"
-            color="success"
+            background-color="pink"
+            color="purple"
             v-bind:value="bingoItemsToggledPercent"
           ></v-progress-linear>
 
           <v-row align="center" justify="center">
             <v-chip
               class="ma-2"
-              :color="bingoItemsToggledCount > 0 ? 'green' : 'red'"
+              :color="bingoItemsToggledCount > 0 ? 'purple' : 'pink'"
               text-color="white"
             >{{bingoItemsToggledCount}}</v-chip>good practices
           </v-row>
@@ -36,7 +36,7 @@
             outlined
             :raised="!(!!bingoItemsToggle[index])"
             tile
-            :color="!bingoItemsToggle[index] ? 'gray' : 'green lighten-4' "
+            :color="!bingoItemsToggle[index] ? 'gray' : 'purple lighten-4' "
             hover
             height="100%"
           >
