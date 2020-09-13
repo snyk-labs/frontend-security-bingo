@@ -8009,6 +8009,11 @@ vue-cli-plugin-vuetify@~2.0.5:
     semver "^7.1.2"
     shelljs "^0.8.3"
 
+vue-confetti@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vue-confetti/-/vue-confetti-2.2.1.tgz#5cc5f96c43a7fe2b0a831bb2cf04473c1f65b017"
+  integrity sha512-yWDb21phC9jQtdjBi9r40UCTnBG1IEu9VuZUaoTSlDao4RwRJEb+rCKa5qWUkzwGZViwJGguEWFWCw9I2V/bQw==
+
 vue-eslint-parser@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.0.0.tgz#a4ed2669f87179dedd06afdd8736acbb3a3864d6"

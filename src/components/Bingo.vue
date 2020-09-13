@@ -228,6 +228,12 @@ export default {
         );
       }
 
+      if (this.bingoItemsToggledPercent === 100) {
+        this.$confetti.start();
+      } else {
+        this.$confetti.stop();
+      }
+
       this.bingoItemsToggledCount = totalItemsToggled;
     },
     gotoWebsite: function({ url }) {
