@@ -17,12 +17,6 @@
             >{{bingoItemsToggledCount}}</v-chip>good practices
           </v-row>
 
-          <v-row align="center" justify="center">
-            <v-btn class="ma-2" color="blue" dark>
-              help others improve too
-              <v-icon dark>mdi-twitter</v-icon>
-            </v-btn>
-          </v-row>
         </v-row>
       </v-col>
 
@@ -60,9 +54,16 @@
         </v-col>
       </v-row>
 
+       <v-row align="center mb-5" justify="center">
+        <v-btn @click="shareWithYourFriends" class="ma-2" color="blue" dark>
+          <v-icon dark>mdi-twitter</v-icon>
+          share with your friends
+        </v-btn>
+      </v-row>
+
       <hr />
       <v-row class="text-center">
-        <v-col class="mb-5" cols="12">
+        <v-col class="mb-5 mt-5" cols="12">
           <h2 class="headline font-weight-bold mb-3">What's next?</h2>
           <v-row justify="center">
             <a
@@ -231,6 +232,12 @@ export default {
     },
     gotoWebsite: function({ url }) {
       window.open(url, "_blank");
+    },
+    shareWithYourFriends: function() {
+      const tweetText = 'I played Frontend Security Bingo and you can too at https://frontend-security-bingo.netlify.app/'
+      const tweetMsg = encodeURIComponent(tweetText);
+      const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetMsg}&via=liran_tal`;
+      window.open(tweetUrl, "_blank");
     }
   }
 };
