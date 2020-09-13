@@ -28,27 +28,17 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld />
-      <Bingo />
-
-      <hr />
       <v-row class="text-center">
-        <v-col class="mb-5" cols="12">
-          <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-          <v-row justify="center">
-            <a
-              href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/"
-              class="subheading mx-3"
-              target="_blank"
-            >OWASP Top 10</a>
-            <a
-              href="https://snyk.io/security-resources/"
-              class="subheading mx-3"
-              target="_blank"
-            >Snyk's Security Resources for Developers</a>
-          </v-row>
+        <v-col>
+          <h1 class="display-2 font-weight-bold mb-3">Welcome to Frontend Security Bingo</h1>
+
+          <p class="subheading font-weight-regular">
+            Are you following security practices when developing and deploying your frontend projects?
+          </p>
         </v-col>
       </v-row>
+      <HelloWorld v-show="intro" @onReady="beginGame" />
+      <Bingo v-show="!intro" />
 
       <SocialShare />
     </v-content>
@@ -69,8 +59,16 @@ export default {
     SocialShare
   },
 
-  data: () => ({
-    //
-  })
+  data() {
+    return {
+      intro: true
+    }
+  },
+
+  methods: {
+    beginGame: function() {
+      this.intro = false
+    }
+  }
 };
 </script>

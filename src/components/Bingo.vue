@@ -59,6 +59,61 @@
           </v-card>
         </v-col>
       </v-row>
+
+      <hr />
+      <v-row class="text-center">
+        <v-col class="mb-5" cols="12">
+          <h2 class="headline font-weight-bold mb-3">What's next?</h2>
+          <v-row justify="center">
+            <a
+              href="https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/"
+              class="subheading mx-3"
+              target="_blank"
+            >OWASP Top 10</a>
+            <a
+              href="https://snyk.io/security-resources/"
+              class="subheading mx-3"
+              target="_blank"
+            >Snyk's Security Resources for Developers</a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security"
+              class="subheading mx-3"
+              target="_blank"
+            >MDN Web Security</a>
+            <a
+              href="https://www.mydevsecops.io/the-secure-developer-podcast"
+              class="subheading mx-3"
+              target="_blank"
+            >The Secure Developer podcast</a>
+            <a
+              href="https://www.mydevsecops.io/content"
+              class="subheading mx-3"
+              target="_blank"
+            >MyDevSecOps Community</a>
+          </v-row>
+
+          <v-row justify="center">
+            <a
+              href="https://cheatsheetseries.owasp.org/Glossary.html"
+              class="subheading mx-3"
+              target="_blank"
+            >OWASP Cheat Sheet Series</a>
+            <a
+              href="https://github.com/qazbnm456/awesome-web-security"
+              class="subheading mx-3"
+              target="_blank"
+            >Curated Awesome Web Security resources</a>
+            <a
+              href="https://portswigger.net/web-security"
+              class="subheading mx-3"
+              target="_blank"
+            >PortSwigger's Web Security Academy</a>
+          </v-row>
+
+          
+        </v-col>
+      </v-row>
+
     </v-container>
   </div>
 </template>
