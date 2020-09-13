@@ -155,27 +155,6 @@ export default {
         },
         {
           directive: "",
-          text: "I set HTTP header Strict-Transport-Security",
-          category: "http security header",
-          url:
-            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
-        },
-        {
-          directive: "",
-          text: "I set HTTP header Strict-Transport-Security",
-          category: "http security header",
-          url:
-            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
-        },
-        {
-          directive: "",
-          text: "I set HTTP header Strict-Transport-Security",
-          category: "http security header",
-          url:
-            "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security"
-        },
-        {
-          directive: "",
           text: "I learn about web security",
           category: "security learning",
           url:
