@@ -26,7 +26,7 @@
             :ripple="false"
             :title="item.title"
             v-on:click="updateBingoCount({id: index})"
-            class="ma-4 pa-4 d-flex flex-column"
+            class="ma-1 pa-1 d-flex flex-column"
             outlined
             :raised="!(!!bingoItemsToggle[index])"
             tile
