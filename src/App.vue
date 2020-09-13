@@ -10,7 +10,7 @@
         />
       </div>
 
-      <div class="d-flex align-center">
+      <div style="margin-left: -50px;" class="d-flex align-center">
         <v-img
           alt="Snyk logo"
           src="https://res.cloudinary.com/snyk/image/upload/v1537345904/press-kit/brand/wordmark-white.png"
