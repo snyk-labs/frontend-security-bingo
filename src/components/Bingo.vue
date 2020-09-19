@@ -188,6 +188,28 @@ export default {
           url:
             "https://snyk.io/learn/cross-site-scripting/"
         },
+        {
+          directive: "",
+          text: "I know about DOM-based vulnerabilities",
+          category: "vulnerabilities",
+          url:
+            "https://portswigger.net/web-security/dom-based"
+        },
+        {
+          directive: "",
+          text: "I watched some of Standford's CS 253 Web Security course",
+          category: "security learning",
+          url:
+            "https://web.stanford.edu/class/cs253/"
+        },
+
+        {
+          directive: "",
+          text: "I read the State of Open Source Security report",
+          category: "vulnerabilities",
+          url:
+            "https://snyk.io/stateofossecurity/"
+        },
       ]
     };
   },
